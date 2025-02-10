@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/app.js" type="module" defer></script>
+</head>
+
+<body>
+
+
+
+    <section class="container" id="todolist">
+
+        <h1 id="todolist-title">TodoList</h1>
+
+        <template id="todolist-template">
+            <form class="todolist-form">
+                <input required="" class="todolist-form-input" type="text" placeholder="Nouvelle tâche..." name="title">
+                <button class="todolist-btn">Ajouter</button>
+            </form>
+            <nav class="todolist-nav">
+                <button type="button" class=" todolist-btn active" data-filter="all">Toutes</button>
+                <button type="button" class=" todolist-btn" data-filter="todo">A faire</button>
+                <button type="button" class=" todolist-btn" data-filter="done">Faites</button>
+            </nav>
+            <ul class="list-group"></ul>
+        </template>
+
+    </section>
+
+</body>
+
+</html>
